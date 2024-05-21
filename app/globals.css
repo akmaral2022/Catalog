@@ -1,0 +1,158 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* @layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
+
+.Home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url(../src/assets/images/back.jpg);
+  background-size: cover;
+}
+
+.form_box {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+  padding: 0 0 40px 0;
+}
+
+.form_box h2 {
+  font-size: 2em;
+  color: #ffffff;
+  text-align: center;
+}
+
+.input_box {
+  position: relative;
+  height: 70px;
+  width: 310px;
+  margin: 30px 0;
+  border-bottom: 2px solid #ffffff;
+}
+
+.input_box label {
+  position: absolute;
+  top: 30%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input_box:focus-within label,
+.input_box:focus-within input:not(:placeholder-shown)+label {
+  top: -5px;
+}
+
+
+.input_box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: #ffffff;
+}
+
+.lock-icon {
+  position: absolute;
+  right: 8px;
+  bottom: 20px;
+}
+
+.message-icon {
+  position: absolute;
+  right: 8px;
+  bottom: 20px;
+}
+
+.forget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -15px 0 15px;
+  font-size: 0.9em;
+  gap: 20px;
+}
+
+.forget label {
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.forget a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.forget a:hover {
+  text-shadow: 3px 3px 10px #00e1ff;
+}
+
+.btn button {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.register {
+  font-size: 0.9em;
+  color: #ffffff;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+.register a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.register a:hover {
+  text-shadow: 3px 3px 10px #00e1ff;
+}
